@@ -20,10 +20,6 @@ public class CakeShopData {
 		return employeeList;
 	}
 
-	public Employee getEmployee(){
-		return this.employee;
-	}
-
 	public static ArrayList<Pastry> getPastryList() {
 		return pastryList;
 	}
@@ -80,7 +76,7 @@ public class CakeShopData {
 				employeeList.add(newEmployee);
 			}
 			else
-				employee.setName(name);
+			employee.setName(name);
 			employee.setAge(Integer.parseInt(age));
 			employee.setWorkedHours(Integer.parseInt(hours));
 			employeeList.add(employee);

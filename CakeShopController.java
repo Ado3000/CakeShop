@@ -9,7 +9,7 @@
 public class CakeShopController extends ControllerChooser {
 
 	CakeShopData cD = new CakeShopData();
-	private static  final String name = "ControllerChooser";
+	private static final String name = "CakeShopController";
 	private static double totalEmployeeCost;
 	private static int totalIncome;
 	private static int cost = 0;
