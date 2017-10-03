@@ -33,7 +33,7 @@ public class CakeShopController extends ControllerChooser {
 	//Income calculator
 	public int income(){
 		for(Pastry pastry : cD.getPastryList()){
-		totalIncome += pastry.getAmount() * pastry.getPrice();
+			totalIncome += pastry.getAmount() * pastry.getPrice();
 		}
 		return totalIncome;
 	}
@@ -46,7 +46,7 @@ public class CakeShopController extends ControllerChooser {
 		}
 		return totalEmployeeCost;
 	}
-	
+
 	//Total shop cost calculator
 	public double getTotalCost(){
 		return  cost + totalEmployeeCost;

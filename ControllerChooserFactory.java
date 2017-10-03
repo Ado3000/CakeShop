@@ -6,7 +6,7 @@
  *
  */
 public class ControllerChooserFactory {
-	
+
 	public static ControllerChooser getController(AbstractControllerFactory factory){
 		return factory.createController();
 	}

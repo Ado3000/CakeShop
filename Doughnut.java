@@ -9,22 +9,22 @@
 import java.util.ArrayList;
 
 public class Doughnut extends Pastry {
-	
+
 	private final static int SELLING_PRICE = 26;
-	
+
 	public Doughnut(){
 		setPrice(SELLING_PRICE);
 	}
-	
+
 	public Doughnut(int amount){
 		setPrice(SELLING_PRICE);
 		setAmount(amount);
 	}
-	
+
 	public ArrayList<Ingredients> getIngredientsList() {
 		return ingredientsList;
 	}
-	
+
 
 	@Override
 	public void bake(){
@@ -32,6 +32,6 @@ public class Doughnut extends Pastry {
 		addIngredients(Ingredients.MILK,2);
 		addIngredients(Ingredients.SUGAR,3);
 	}
-	
+
 
 }

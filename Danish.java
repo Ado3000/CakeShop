@@ -9,18 +9,18 @@
 import java.util.ArrayList;
 
 public class Danish extends Pastry {
-	
+
 	private static final int SELLING_PRICE = 30;
-	
+
 	public Danish(){
 		setPrice(SELLING_PRICE);
 	}
-	
+
 	public Danish(int amount){
 		setPrice(SELLING_PRICE);
 		setAmount(amount);
 	}
-	
+
 	public  ArrayList<Ingredients> getIngredientsList() {
 		return ingredientsList;
 	}

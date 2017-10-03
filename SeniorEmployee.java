@@ -6,7 +6,7 @@
  *
  */
 public class SeniorEmployee extends Employee {
-	
+
 	public SeniorEmployee(){
 	}
 
@@ -14,11 +14,11 @@ public class SeniorEmployee extends Employee {
 		double employeeCost = 0;
 		double employeeCostBrutto = 0.0;
 		double totalEmployeeCost = 0.0;
-			employeeCostBrutto = getWorkedHours() * getHourlyRate();
-			employeeCost = employeeCostBrutto * 0.1636 + employeeCostBrutto * 0.0511 + employeeCostBrutto;
-			totalEmployeeCost = super.getTotalEmployeeCost();
-			totalEmployeeCost = totalEmployeeCost + employeeCost;
-		
+		employeeCostBrutto = getWorkedHours() * getHourlyRate();
+		employeeCost = employeeCostBrutto * 0.1636 + employeeCostBrutto * 0.0511 + employeeCostBrutto;
+		totalEmployeeCost = super.getTotalEmployeeCost();
+		totalEmployeeCost = totalEmployeeCost + employeeCost;
+
 		return totalEmployeeCost;
 	}
 }

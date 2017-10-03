@@ -23,7 +23,7 @@ public class CakeShopData {
 	public Employee getEmployee(){
 		return this.employee;
 	}
-	
+
 	public static ArrayList<Pastry> getPastryList() {
 		return pastryList;
 	}
@@ -52,10 +52,10 @@ public class CakeShopData {
 				break;
 			}
 		}
-		
+
 	}
 
-	
+
 	public void setEmployees(){
 		String name = "";
 		String age;
@@ -71,7 +71,7 @@ public class CakeShopData {
 			hours = sc.nextLine();
 			if(sc.nextLine().equals("Exit"))
 				break;
-				
+
 			if(Integer.parseInt(age) > 65){
 				Employee newEmployee = new SeniorEmployee();
 				newEmployee.setName(name);
@@ -80,7 +80,7 @@ public class CakeShopData {
 				employeeList.add(newEmployee);
 			}
 			else
-			employee.setName(name);
+				employee.setName(name);
 			employee.setAge(Integer.parseInt(age));
 			employee.setWorkedHours(Integer.parseInt(hours));
 			employeeList.add(employee);
